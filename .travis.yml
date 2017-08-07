@@ -3,4 +3,10 @@ php:
   - 5.5
   - 5.4
   - hhvm
+  
+# Build only master (plus pull-requests)
+branches:
+  only:
+    - master
+
 script: phpunit Test.php
